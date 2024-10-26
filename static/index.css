@@ -1,22 +1,23 @@
 /* Custom CSS for black theme */
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #2a283c;
+  color: #b7b7b7;
   margin: 0;
   padding: 0;
 }
 
 #header {
-  background-color: #000;
+  background-color: #2a283c;
   padding: 20px;
   text-align: center;
 }
 
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
 #header h1 {
   margin: 0;
   font-size: 24px;
-  font-family: 'Arial', sans-serif;
-  color: #fff;
+  font-family: 'Roboto Mono', italic;
+  color: #b7b7b7;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
