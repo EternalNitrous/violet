@@ -1,9 +1,9 @@
-# TIW Static UV
+# viølet.
 
-Modified Version of the <a href="https://github.com/titaniumnetwork-dev/Ultraviolet-App" target="blank">Ultraviolet</a> backend. This modification changes the proxy **CONFIG**, making it work on static pages. 
-<br> <strong> Our Developers That Worked on This Project: </strong>
-NC Gaming#0058 and kwazeh  <center> Join our discord <a href="https://discord.com/invite/XctyeqGGt4" target="_blank" style="text-decoration:none;"> here </a><br>
-<a> <img src="static/logo.gif" style="width:25%; align-self:center;"> </img> </a> 
+Modified Version of the <a href="https://github.com/TheTIW/UV-Static" target="blank">Ultraviolet</a> Static backend. This modification changes the proxy **CONFIG**, making it work on Cursed Central.
+<br> <strong> The Developers That Worked on This Project: </strong>
+NC Gaming#0058, kwazeh @EternalNitrous <center> Join their discord <a href="https://discord.com/invite/XctyeqGGt4" target="_blank" style="text-decoration:none;"> here </a><br>
+<a> <img style="width:25%; align-self:center;"> </img> </a> 
 </center> <br>
 
 ## Features
@@ -40,4 +40,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 
 ### Disclamer
-We take no credit for the making of UV. Ultraviolet is made by Titanium Network, and therefore isn't ours. This is just a modification built to it to make it static, allowing you to deploy it on simple hosting platofrms like vercel, netlify, onrender static, and etc. You are welcome to edit files to your need, just credit TIW-UV-Static ;)
+We take no credit for the making of UV or UV Static. Ultraviolet is made by Titanium Network, and therefore isn't mine. This is just a modification built to it to make it static, allowing you to deploy it on simple hosting platofrms like vercel, netlify, onrender static, and etc. You are welcome to edit files to your need, just credit TIW-UV-Static ;)
