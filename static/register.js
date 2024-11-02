@@ -6,10 +6,6 @@ const form = document.getElementById("uv-form");
 /**
  * @type {HTMLInputElement}
  */
-const address = document.getElementById("uv-address");
-/**
- * @type {HTMLInputElement}
- */
 const searchEngine = document.getElementById("uv-search-engine");
 /**
  * @type {HTMLParagraphElement}
@@ -31,6 +27,7 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine.value);
+  // Redirect to the search engine without any user input
+  const url = search("", searchEngine.value); // Assuming search function handles empty input
   location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
 });

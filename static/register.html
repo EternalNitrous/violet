@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
-    <meta name="googlebot" content="noindex, nofollow, nosnippet" />
-    <base href="/" />
-    <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>viølet</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <style>
+        body
+        .container {
+            height: 100vh; /* Full height of the viewport */
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center; /* Center text */
+        }
 
-  <body>
-    <div class="logo-wrapper left-margin">
-      <h1>Ultraviolet (STATIC) | Register</h1>
+        .center {
+            margin: 0;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-style: italic;
+            color: #b7b7b7;
+            background-color: transparent;
+            border: 2px solid #b7b7b7;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #b7b7b7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1 style="font-family:Roboto Mono; font-style: italic; color:#b7b7b7">viølet</h1>
+            <form id="uv-form" action="" method="get">
+                <input id="uv-search-engine" value="https://www.google.com" type="hidden"/> 
+                <button type="submit" class="search-button">Register</button>
+            </form>
+            <div class="desc left-margin">
+                <p id="uv-error"></p>
+                <pre id="uv-error-code"></pre>
+            </div>
+        </div>
     </div>
-    <div class="desc left-margin">
-      <p>Click the button below to register the ServiceWorker.</p>
-      <p id="uv-error"></p>
-      <code id="uv-error-code"></code>
-      <button id="uv-register-sw" value="Register service worker">
-        Register ServiceWorker
-      </button>
-    </div>
-    <footer>
-      <span>Ultraviolet &copy; TN 2022</span>
-    </footer>
-    <script src="./static/uv/uv.bundle.js"></script>
-    <script src="./static/uv/uv.config.js"></script>
-    <script src="./static/register-sw.js"></script>
-    <script src="./static/search.js" defer></script>
-    <script src="./static/index.js" defer></script>
-  </body>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="register.js" defer></script>
+</body>
 </html>
