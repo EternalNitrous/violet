@@ -13,30 +13,26 @@
             margin: 0;
             font-family: Arial, sans-serif;
             text-align: center;
+            background-color: transparent; /* Set background to transparent */
+            color: white; /* Set text color to white */
+        }
+        a {
+            color: inherit; /* Use the inherited color for the hyperlink */
+            text-decoration: none; /* Remove underline from hyperlink */
+            font-weight: bold; /* Make hyperlink bold */
+        }
+        a:hover {
+            text-decoration: underline; /* Optional: underline on hover */
         }
         h1 {
             font-size: 30px;
         }
     </style>
-    <script>
-        let countdown = 3;
-
-        function updateCountdown() {
-            if (countdown > 0) {
-                document.getElementById("countdown").innerText = countdown;
-                countdown--;
-            } else {
-                window.close();
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-    </script>
 </head>
 <body>
     <div>
         <h1>Success!</h1>
-        <p>You have been registered. This tab will close in <span id="countdown">3</span> seconds.</p>
+        <p>The ServiceWorker has been registered. Apps should work now. If there are any issues, report them <a href="https://sites.google.com/view/curs3d-c4ntral/sup3r-s3crets/main/sugg3stions" target="_blank">HERE</a>.</p>
     </div>
 </body>
 </html>
