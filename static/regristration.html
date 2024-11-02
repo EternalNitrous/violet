@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        let countdown = 3;
+
+        function updateCountdown() {
+            if (countdown > 0) {
+                document.getElementById("countdown").innerText = countdown;
+                countdown--;
+            } else {
+                window.close();
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Success!</h1>
+        <p>You have been registered. This tab will close in <span id="countdown">3</span> seconds.</p>
+    </div>
+</body>
+</html>
