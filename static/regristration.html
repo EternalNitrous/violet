@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>viølet</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-image: url('/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
             margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
+            height: 100vh;
         }
-        h1 {
-            font-size: 30px;
+
+        .container {
+            height: 100vh; /* Full height of the viewport */
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center; /* Center text */
+        }
+
+        .center {
+            margin: 0;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-style: italic;
+            color: #b7b7b7;
+            background-color: transparent;
+            border: 2px solid #b7b7b7;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #b7b7b7;
+            color: white;
         }
     </style>
-    <script>
-        let countdown = 3;
-
-        function updateCountdown() {
-            if (countdown > 0) {
-                document.getElementById("countdown").innerText = countdown;
-                countdown--;
-            } else {
-                window.close();
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-    </script>
 </head>
 <body>
-    <div>
-        <h1>Success!</h1>
-        <p>You have been registered. This tab will close in <span id="countdown">3</span> seconds.</p>
+    <div class="container">
+        <div class="center">
+            <h1 style="font-family:Roboto Mono; font-style: italic; color:#b7b7b7">viølet</h1>
+            <form id="uv-form" action="https://www.google.com/search" method="get">
+                <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+                <button type="submit" class="search-button">Search the web</button>
+            </form>
+            <div class="desc left-margin">
+                <p id="uv-error"></p>
+                <pre id="uv-error-code"></pre>
+            </div>
+            <a href="https://discord.gg/zJhPJYJCeJ" target="_blank" class="fa-brands fa-discord"></a>
+            <a href="https://github.com/TheTIW/UV-Static" target="_blank" class="fa-brands fa-github"></a>
+            <a href="https://starttiw.org" target="_blank" class="fa-solid fa-cloud"></a>
+        </div>
     </div>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
 </body>
 </html>
